@@ -12,7 +12,7 @@
 <body>
     <header id="body-header">
         <nav class="navbar">
-            <ul class="horizontal-list text-center nav-menu">
+            <ul class="horizontal-list nav-center nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#timeline">Timeline</a></li>
@@ -34,96 +34,147 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>History of Computer Science</h1>
+        <h1 class="head-align" id="heading-history">History of Computer Science</h1>
     </header>
     <main>
-        <section class="intro">
-            <h2>Welcome to the Journey Through Time</h2>
-            <p>
-                Embark on a captivating exploration of the history of computer science, a discipline that has
-                revolutionized the world we live in.
-                From humble mechanical calculators to powerful artificial intelligence, discover the remarkable
-                evolution of computing technology.
-            </p>
+        <section id="about">
+
+            <div id="about-para">
+                <h2 id="journey-time" class="text-center mb75px mb50up">Welcome to the Journey Through Time</h2>
+                <p>
+                    Embark on a captivating exploration of the <span class="text-highlight">history of computer
+                        science</span>, a discipline that has
+                    revolutionized the world we live in.
+                    From humble mechanical calculators to powerful <span class="text-highlight">artificial
+                        intelligence</span>, discover the remarkable
+                    evolution of computing technology.
+
+                </p>
+
+            </div>
+
         </section>
 
-        <section class="timeline">
-            <h2>Timeline of Key Events</h2>
-            <div class="timeline-container">
-                <div id="timeline-divider">
-                    <div class="timeline-traveller"><i class="fas fa-plane"></i></div>
+        <section>
+            <h2 class="section-heading mb75px mb50up">
+                <span>
+                    <i class="fas fa-graduation-cap"></i>
+                </span>
+                <span id="journey-time"> Timeline Of Events</span>
+            </h2>
+
+            <div class="timeline">
+
+                <div class="timeline-box ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://iedc.iemecell.com/img/iedc_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> 1801 </h3>
+
+
+                        <p class="experience-description text-align-justify">Charles Babbage proposes the "Difference
+                            Engine," a precursor to modern computers that aimed to
+                            automate mathematical calculations.</p>
+                    </div>
                 </div>
-                <ul class="timeline-list">
-                    <li>
-                        <span class="year">1801</span>
-                        <div class="timeline-box">
-                            Charles Babbage proposes the "Difference Engine," a precursor to modern computers that aimed to
-                            automate mathematical calculations.
-                        </div>
-                    </li>
 
-                    <li>
-                        <span class="year">1936</span>
-                        <div class="timeline-box">
-                            Alan Turing introduces the concept of a Turing machine, a theoretical model of computation that laid
+                <div class="timeline-box right ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img
+                                src="data:image/jpeg;base64,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">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> 1936 </h3>
+
+                        <p class="experience-description text-align-justify">Alan Turing introduces the concept of a
+                            Turing machine, a theoretical model of computation that laid
                             the groundwork for modern computers.
-                        </div>
-                    </li>
-                    
-                    <li>
-                        <span class="year">1945</span>
-                        <div class="timeline-box">
-                            ENIAC, the Electronic Numerical Integrator and Computer, becomes the world's first general-purpose
-                            electronic digital computer, marking a monumental leap in computing power.
-                        </div>
-                    </li>
+                        </p>
+                    </div>
+                </div>
 
-                    <li>
-                        <span class="year">1951</span>
-                        <div class="timeline-box">
-                            UNIVAC I becomes the first commercially produced computer, ushering in a new era of computing
-                    accessibility.
+                <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img
+                                src="https://uploads-ssl.webflow.com/63a4093ca918637551d8e43e/63d5131b6aee267a8b313682_logo.57ad364c-p-500.webp">
                         </div>
-                    </li>
-                </ul>
+                        <h3 class="experience-designation m0 m-blue"> 1945 </h3>
+
+                        <p class="experience-description text-align-justify"> ENIAC, the Electronic Numerical Integrator
+                            and Computer, becomes the world's first general-purpose
+                            electronic digital computer, marking a monumental leap in computing power.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section>
+            <div id="about-para">
+                <h2 class="text-center mb75px mb50up" id="journey-time">Contributions and Pioneers</h2>
+                <p>
+                    The history of computer science is rich with visionaries who shaped the landscape of technology. Ada
+                    Lovelace's pioneering work on the Analytical Engine established her as the world's first computer
+                    programmer.
+                    Grace Hopper's innovation in programming languages laid the foundation for modern software
+                    development.
+                    John von Neumann's contributions to computer architecture and organization revolutionized the design
+                    of
+                    computers.
+                    Claude Shannon's insights into digital circuits formed the basis of digital logic and information
+                    theory.
+                    Donald Knuth's dedication to algorithms and typography has left an indelible mark on computer
+                    science
+                    education.
+                </p>
+            </div>
+        </section>    
+
+
+        <section>
+            <div id="about-para">
+                <h2 class="text-center mb75px mb50up" id="journey-time">The Modern Era of Computer Science</h2>
+                <p>
+                            The 21st century witnesses unprecedented advancements in computer science. The proliferation
+                            of the
+                            Internet connects the world and transforms how information is accessed and shared.
+                            Artificial intelligence and machine learning redefine what computers can accomplish, from
+                            autonomous
+                            vehicles to medical diagnostics.
+                            Quantum computing holds the promise of solving problems previously considered unsolvable.
+                            Innovations like smartphones, cloud computing, and data science are reshaping industries and
+                            daily life.
+                </p>
             </div>
         </section>
 
-        <section class="pioneers">
-            <h2>Contributions and Pioneers</h2>
-            <p>
-                The history of computer science is rich with visionaries who shaped the landscape of technology. Ada
-                Lovelace's pioneering work on the Analytical Engine established her as the world's first computer
-                programmer.
-                Grace Hopper's innovation in programming languages laid the foundation for modern software development.
-                John von Neumann's contributions to computer architecture and organization revolutionized the design of
-                computers.
-                Claude Shannon's insights into digital circuits formed the basis of digital logic and information
-                theory.
-                Donald Knuth's dedication to algorithms and typography has left an indelible mark on computer science
-                education.
-            </p>
+        <section>
+            <div id="about-para">
+                <h2 class="text-center mb75px mb50up" id="journey-time">Explore Further</h2>
+                <p>
+                        Delve deeper into the history of computer science through meticulously researched books,
+                        enlightening
+                        documentaries, and authoritative online resources.
+                        Universities and coding bootcamps offer courses that provide a comprehensive understanding
+                        of computer
+                        science principles, allowing you to participate in shaping the future of technology.           
+                </p>
+            </div>
         </section>
-        <section class="modern-era">
-            <h2>The Modern Era of Computer Science</h2>
-            <p>
-                The 21st century witnesses unprecedented advancements in computer science. The proliferation of the
-                Internet connects the world and transforms how information is accessed and shared.
-                Artificial intelligence and machine learning redefine what computers can accomplish, from autonomous
-                vehicles to medical diagnostics.
-                Quantum computing holds the promise of solving problems previously considered unsolvable.
-                Innovations like smartphones, cloud computing, and data science are reshaping industries and daily life.
-            </p>
-        </section>
-        <section class="resources">
-            <h2>Explore Further</h2>
-            <p>
-                Delve deeper into the history of computer science through meticulously researched books, enlightening
-                documentaries, and authoritative online resources.
-                Universities and coding bootcamps offer courses that provide a comprehensive understanding of computer
-                science principles, allowing you to participate in shaping the future of technology.
-            </p>
-        </section>
+
     </main>
     <footer>
         <p>&copy; 2023 History of Computer Science</p>
