@@ -1,4 +1,20 @@
-/* Reset default styles */
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+   
+    } }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+}
+
+/* Apply the slide-in animation to sections */
+.section-slide {
+    animation: slideIn 1s ease-in-out;
+}
+
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -8,18 +24,60 @@ body, h1, h2, h3, p {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #123456; /* Deep blue color */
+    background-color: #123; /* Deep blue color */
     color: #333;
 }
 
 /* Header styling */
 header {
-    background-color: #336677; /* Dark blue color */
+    background-color: #306; /* Dark blue color */
     color: #fff;
     text-align: center;
     padding: 2rem 0;
 }
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  right: 5vh;
+  top:20vh
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #6600cc;
+  opacity: 0.9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: underline;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -49,7 +107,7 @@ nav a {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     overflow: hidden;
     text-decoration: none;
-    color: #555;
+    color: #aaa;
     transition: color 0.3s ease;
 }
 
@@ -75,7 +133,7 @@ nav a:active:before {
 }
 
 nav a:hover {
-    color: #123456;
+    color: #3fc;
 }
 
 /* Main content styling */
@@ -84,11 +142,12 @@ main {
 }
 
 section {
-    background-color: #abcdef; /* Pale blue color */
+    background-color: #0b9; /* Pale blue color */
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     margin-bottom: 2rem;
+    color: #000;
 }
 
 /* Timeline styling */
@@ -98,7 +157,7 @@ section {
 }
 
 .timeline h3 {
-    color: #f76f8e; /* Light pink color */
+    color: #000; /* Light pink color */
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }

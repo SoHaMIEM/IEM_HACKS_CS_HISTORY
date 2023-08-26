@@ -49,6 +49,19 @@ section:nth-child(2n + 1) {
     margin-right: 0.5rem;
 }
 
+/* Hang */
+
+@keyframes hang {
+	50% {
+		transform: translateY(3px);
+	}
+
+	100% {
+		transform: translateY(6px);
+	}
+}
+
+
 
 /* Horizontal Lists */
 
@@ -240,6 +253,41 @@ section:nth-child(2n + 1) {
     color: #2857a4;
 }
 
+/*Skills Section*/
+
+.skills-display {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 30px;
+    overflow: hidden;
+}
+
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/*Experience*/
+
 .experience-designation {
     font-size: 1.4rem;
 }
@@ -267,6 +315,142 @@ section:nth-child(2n + 1) {
 
 .text-align-justify {
     text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .head-align {
+        margin-left: 5vh;
+    }
+
+    #about-para {
+        width: 90%;
+    }
+
+    .timeline-box {
+        width: 90%;
+        left: 5%;
+    }
+
+    .timeline-box:nth-child(2n) {
+        left: 5%;
+    }
+
+    .timeline-box:nth-child(2n)::after,
+    .timeline-box:nth-child(2n+1)::after {
+        right: -9%;
+    }
+
+    #timeline-divider {
+        border: none;
+        display: none;
+    }
+
+    .section-heading span {
+        font-size: 28px;
+    }
+
+    .experience-designation {
+        font-size: 1.2rem;
+    }
+
+    .experience-company-name {
+        font-size: 1rem;
+    }
+
+    .experience-duration,
+    .experience-description {
+        font-size: 12px;
+    }
+
+    #about-para h2,
+    .section-heading {
+        font-size: 24px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    /* ... (other existing media query rules) ... */
+
+    /* Hide the navigation bar */
+    .nav-menu {
+        display: none;
+    }
+
+    /* Show the three-dots icon */
+    .mobile-nav-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Style the three-dots icon */
+    .mobile-nav-icon:hover ~ .nav-menu {
+        display: block;
+    }
+}
+
+/* Media Query for mobile */
+@media screen and (max-width: 768px) {
+    /* Original navigation bar is hidden by default */
+    .mobile-nav-dropdown {
+        display: none;
+        position: absolute;
+        top: 50px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        background-color: #0066ff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        list-style: none;
+        z-index: 999;
+    }
+
+    /* Show mobile navigation dropdown on hover */
+    .mobile-nav-icon:hover + .nav-container .mobile-nav-dropdown {
+        display: block !important;
+    }
+}
+
+/* Add styling for the footer */
+footer {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: medium;
+}
+
+footer p {
+    margin: 0;
 }
 
 
