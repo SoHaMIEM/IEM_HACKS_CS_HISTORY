@@ -1,0 +1,127 @@
+/* Reset default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #123456; /* Deep blue color */
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #336677; /* Dark blue color */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    margin-left: -2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+nav li {
+    margin: 0 0.5rem;
+}
+
+nav a {
+    /* Underline From Center */
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+nav a:hover:before, 
+nav a:focus:before, 
+nav a:active:before {
+    left: 0;
+    right: 0;
+}
+
+nav a:hover {
+    color: #123456;
+}
+
+/* Main content styling */
+main {
+    padding: 0;
+}
+
+section {
+    background-color: #abcdef; /* Pale blue color */
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Timeline styling */
+.timeline li {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline h3 {
+    color: #f76f8e; /* Light pink color */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline p {
+    color: #777;
+}
+
+.timeline:before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 1rem;
+    width: 4px;
+    height: 100%;
+    background-color: #f76f8e; /* Light pink color */
+}
+
+/* Footer styling */
+footer {
+    background-color: #2c3e50; /* Dark blue color */
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1.5rem 0;
+}
