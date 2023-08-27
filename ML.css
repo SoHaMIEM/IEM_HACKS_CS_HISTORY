@@ -178,10 +178,13 @@ p {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #123;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #123;
+  color: #333;
+  background-image: url(https://collibra.com/wp-content/uploads/AIML_DQ.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
