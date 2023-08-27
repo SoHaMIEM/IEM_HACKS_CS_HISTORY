@@ -4,6 +4,9 @@
 
 Welcome to the History of Technology Website! This website aims to provide insights into the significant events that have shaped the fields of Artificial Intelligence (AI), Machine Learning (ML), Cybersecurity, Web Technology, Internet of Things (IoT), and Data Science.
 
+#IMPORTANT NOTE TO CONSIDER TO OPEN THE PROJECT:-
+ Our main index.html is Register_Page.html open that html file to get access directly to our project.
+
 ## Table of Contents
 
 - [Description](#description)
