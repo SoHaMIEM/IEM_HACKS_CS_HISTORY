@@ -1,5 +1,3 @@
-# IEM_HACKS_CS_HISTORY
-
 # History of Computer Science Website
 
 Welcome to the History of Technology Website! This website aims to provide insights into the significant events that have shaped the fields of Artificial Intelligence (AI), Machine Learning (ML), Cybersecurity, Web Technology, Internet of Things (IoT), and Data Science.
