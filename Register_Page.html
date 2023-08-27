@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register</title>
+   <link rel="stylesheet" href="Register_Page.css">
+</head>
+
+<body>
+   <section>
+      <div class="login-box">
+         <form action="">
+            <h2>Register</h2>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="name"></ion-icon></span>
+               <input type="name" required>
+               <label>Name</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="calendar"></ion-icon></span>
+               <input type="date" required>
+               <label></label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="Address"></ion-icon></span>
+               <input type="text" required>
+               <label>Address</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="mail"></ion-icon></span>
+               <input type="email" required>
+               <label>Email</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+               <input type="password" required>
+               <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+               <label><input type="checkbox">Remember Me</label>
+               <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit">Register</button>
+            <div class="register-link">
+               <p>Do you have an account? <a href="Login_Page.html">Login</a></p>
+            </div>
+         </form>
+      </div>
+   </section>
+
+   <script>
+      document.getElementById('login-form').addEventListener('submit', async (e) => {
+         e.preventDefault();
+
+         const username = document.getElementById('username').value;
+         const password = document.getElementById('password').value;
+
+         // Send the login data to the server
+         const response = await fetch('/api/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password })
+         });
+
+         if (response.ok) {
+            const data = await response.json();
+            alert(data.message);
+
+            // Redirect to a protected page
+            window.location.href = 'Project_History.html';
+         } else {
+            const error = await response.json();
+            alert(error.error);
+         }
+      });
+   </script>
+   
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
