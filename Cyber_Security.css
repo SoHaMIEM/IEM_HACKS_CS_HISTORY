@@ -182,6 +182,11 @@ body {
     line-height: 1.6;
     background-color: #123;
     color: #333;
+    background-image: url('https://www.collibra.com/wp-content/uploads/AIML_DQ.png.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
